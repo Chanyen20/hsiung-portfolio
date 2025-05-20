@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -33,22 +36,6 @@
     --ring: 222.2 84% 4.9%;
 
     --radius: 0.5rem;
-
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
   .dark {
@@ -79,14 +66,6 @@
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
   }
 }
 
@@ -96,6 +75,54 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-white text-portfolio-primary font-sans;
+    scroll-behavior: smooth;
   }
+}
+
+@layer components {
+  .section {
+    @apply py-16 md:py-20;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold mb-10 text-portfolio-primary;
+  }
+  
+  .reveal {
+    @apply opacity-0;
+  }
+  
+  .reveal.active {
+    @apply animate-fade-in;
+  }
+
+  .hover-scale {
+    @apply transition-transform duration-200 hover:scale-105;
+  }
+  
+  .button-primary {
+    @apply bg-portfolio-primary text-white px-6 py-2 rounded-md hover:shadow-md transition-all duration-300 inline-flex items-center justify-center;
+  }
+  
+  .button-outline {
+    @apply border border-portfolio-primary text-portfolio-primary px-6 py-2 rounded-md hover:bg-portfolio-primary hover:text-white transition-all duration-300 inline-flex items-center justify-center;
+  }
+
+  .skill-item {
+    @apply px-4 py-2 bg-portfolio-accent rounded-full text-portfolio-primary inline-block mr-2 mb-2 transition-transform duration-200 hover:scale-105;
+  }
+
+  .timeline-item {
+    @apply border-l-2 border-portfolio-primary pl-6 pb-6 relative;
+  }
+
+  .timeline-dot {
+    @apply absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-white border-2 border-portfolio-primary;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
 }
