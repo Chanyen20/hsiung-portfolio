@@ -9,7 +9,7 @@ export function Hero() {
   }, []);
   return <section className="relative min-h-screen flex items-center bg-portfolio-accent dark:bg-portfolio-primary/95 pt-16 overflow-hidden" id="home">
       {/* Modern background elements */}
-      <div className="absolute inset-0 z-0 px-0">
+      <div className="absolute inset-0 z-0 px-0 mx-0">
         <div className="absolute -top-20 -left-20 w-64 h-64 bg-gradient-to-br from-portfolio-accent via-white to-portfolio-accent dark:from-portfolio-primary/50 dark:via-portfolio-primary/30 dark:to-portfolio-primary/50 rounded-full blur-3xl opacity-50"></div>
         <div className="absolute bottom-10 right-10 w-80 h-80 bg-gradient-to-tr from-portfolio-accent via-white to-portfolio-accent dark:from-portfolio-primary/50 dark:via-portfolio-primary/30 dark:to-portfolio-primary/50 rounded-full blur-3xl opacity-40"></div>
       </div>
@@ -42,12 +42,12 @@ Microservices &amp; Performance Testing</p>
           </div>
           <div className={`w-full md:w-1/2 transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <div className="relative max-w-md mx-auto">
-              <div className="relative">
+              <div className="relative mx-0">
                 {/* Decorative elements */}
-                <div className="absolute -top-6 -left-6 w-full h-full rounded-full bg-gradient-to-br from-portfolio-primary to-portfolio-primary/50 dark:from-white/80 dark:to-white/30 blur-md"></div>
+                <div className="absolute -top-6 -left-6 w-full h-full rounded-full bg-gradient-to-br from-portfolio-primary to-portfolio-primary/50 dark:from-white/80 dark:to-white/30 blur-md mx-[19px]"></div>
                 
                 {/* Modern profile image with avatar component */}
-                <div className="relative aspect-square w-full max-w-md mx-auto">
+                <div className="relative aspect-square w-full max-w-md mx-[20px]">
                   <Avatar className="w-full h-full border-4 border-white dark:border-portfolio-primary/80 shadow-xl">
                     <AvatarImage alt="Chan-Yen Hsiung" className="object-cover" src="https://i.postimg.cc/pXfq8p2z/RA646773-DUMH-3.jpg" />
                     <AvatarFallback className="text-6xl">CH</AvatarFallback>
