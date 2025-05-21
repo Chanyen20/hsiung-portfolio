@@ -1,24 +1,5 @@
 
-import { useEffect } from "react";
-
 export function Skills() {
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("active");
-        }
-      });
-    });
-
-    const elements = document.querySelectorAll(".reveal");
-    elements.forEach((el) => observer.observe(el));
-
-    return () => {
-      elements.forEach((el) => observer.unobserve(el));
-    };
-  }, []);
-
   const skills = {
     frontend: ["React", "TypeScript", "HTML5", "CSS3"],
     backend: ["Microservices", "REST APIs", "Node.js", "Java"],

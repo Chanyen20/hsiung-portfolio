@@ -1,24 +1,5 @@
 
-import { useEffect } from "react";
-
 export function Services() {
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("active");
-        }
-      });
-    });
-
-    const elements = document.querySelectorAll(".reveal");
-    elements.forEach((el) => observer.observe(el));
-
-    return () => {
-      elements.forEach((el) => observer.unobserve(el));
-    };
-  }, []);
-
   return (
     <section id="services" className="section bg-portfolio-accent dark:bg-portfolio-primary/90">
       <div className="container mx-auto px-4">

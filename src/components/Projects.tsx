@@ -1,25 +1,8 @@
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export function Projects() {
   const [activeProject, setActiveProject] = useState<number | null>(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("active");
-        }
-      });
-    });
-
-    const elements = document.querySelectorAll(".reveal");
-    elements.forEach((el) => observer.observe(el));
-
-    return () => {
-      elements.forEach((el) => observer.unobserve(el));
-    };
-  }, []);
 
   const projects = [
     {

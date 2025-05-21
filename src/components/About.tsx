@@ -1,25 +1,7 @@
 
-import { useEffect } from "react";
 import { School } from "lucide-react";
 
 export function About() {
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("active");
-        }
-      });
-    });
-
-    const elements = document.querySelectorAll(".reveal");
-    elements.forEach((el) => observer.observe(el));
-
-    return () => {
-      elements.forEach((el) => observer.unobserve(el));
-    };
-  }, []);
-
   return (
     <section id="about" className="section bg-white dark:bg-portfolio-primary">
       <div className="container mx-auto px-4">

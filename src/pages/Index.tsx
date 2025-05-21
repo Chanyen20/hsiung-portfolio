@@ -11,7 +11,7 @@ import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 
 const Index = () => {
-  // Scroll reveal animation
+  // Centralized scroll reveal animation
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -21,13 +21,17 @@ const Index = () => {
           }
         });
       },
-      { threshold: 0.1 }
+      { threshold: 0.1, rootMargin: "0px 0px -10% 0px" }
     );
 
-    const elements = document.querySelectorAll(".reveal");
-    elements.forEach((el) => observer.observe(el));
+    // Wait for DOM to be fully loaded
+    setTimeout(() => {
+      const elements = document.querySelectorAll(".reveal");
+      elements.forEach((el) => observer.observe(el));
+    }, 100);
 
     return () => {
+      const elements = document.querySelectorAll(".reveal");
       elements.forEach((el) => observer.unobserve(el));
     };
   }, []);
