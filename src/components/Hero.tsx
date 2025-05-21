@@ -9,7 +9,7 @@ export function Hero() {
   }, []);
   return <section className="relative min-h-screen flex items-center bg-portfolio-accent dark:bg-portfolio-primary/95 pt-16 overflow-hidden" id="home">
       {/* Modern background elements */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 px-[20px]">
         <div className="absolute -top-20 -left-20 w-64 h-64 bg-gradient-to-br from-portfolio-accent via-white to-portfolio-accent dark:from-portfolio-primary/50 dark:via-portfolio-primary/30 dark:to-portfolio-primary/50 rounded-full blur-3xl opacity-50"></div>
         <div className="absolute bottom-10 right-10 w-80 h-80 bg-gradient-to-tr from-portfolio-accent via-white to-portfolio-accent dark:from-portfolio-primary/50 dark:via-portfolio-primary/30 dark:to-portfolio-primary/50 rounded-full blur-3xl opacity-40"></div>
       </div>
