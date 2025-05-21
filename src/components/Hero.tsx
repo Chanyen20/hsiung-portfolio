@@ -15,7 +15,7 @@ export function Hero() {
       </div>
       
       <div className="container mx-auto px-4 z-10">
-        <div className="flex flex-col md:flex-row items-center justify-between mx-[3px] px-[3px]">
+        <div className="flex flex-col md:flex-row items-center justify-between mx-[3px] px-[15px]">
           <div className={`w-full md:w-1/2 mb-12 md:mb-0 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <div className="max-w-lg mx-auto md:mx-0">
               <h1 className="text-4xl mb-4 leading-tight font-bold text-gray-950 md:text-5xl">
