@@ -1,9 +1,6 @@
-
 import { School } from "lucide-react";
-
 export function About() {
-  return (
-    <section id="about" className="section bg-white dark:bg-portfolio-primary">
+  return <section id="about" className="section bg-white dark:bg-portfolio-primary">
       <div className="container mx-auto px-4">
         <h2 className="section-title text-center dark:text-white reveal">About Me</h2>
         
@@ -27,7 +24,7 @@ export function About() {
                 </div>
                 <div className="ml-4">
                   <h4 className="font-medium text-portfolio-primary dark:text-white">M.S. in Information Management</h4>
-                  <p className="text-portfolio-secondary dark:text-gray-300">Purdue University (2024–Aug 2025)</p>
+                  <p className="text-portfolio-secondary dark:text-gray-300">Purdue University (Aug 2024–Aug 2025)</p>
                 </div>
               </div>
               
@@ -44,6 +41,5 @@ export function About() {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 }
