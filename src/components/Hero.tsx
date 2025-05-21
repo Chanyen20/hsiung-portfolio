@@ -75,7 +75,7 @@ export function Hero() {
                 <div className="relative aspect-square w-full max-w-md mx-auto">
                   <Avatar className="w-full h-full border-4 border-white dark:border-portfolio-primary/80 shadow-xl">
                     <AvatarImage 
-                      src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                      src="https://i.postimg.cc/yN43z3v7/Chan-Yen-Hsiung.jpg"
                       alt="Chan-Yen Hsiung"
                       className="object-cover"
                     />
