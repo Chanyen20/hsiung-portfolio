@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
@@ -49,7 +50,7 @@ export function Hero() {
                 {/* Modern profile image with avatar component */}
                 <div className="relative aspect-square w-full max-w-md mx-auto">
                   <Avatar className="w-full h-full border-4 border-white dark:border-portfolio-primary/80 shadow-xl">
-                    <AvatarImage alt="Chan-Yen Hsiung" className="object-cover" src="https://i.postimg.cc/yN43z3v7/Chan-Yen-Hsiung.jpg" />
+                    <AvatarImage alt="Chan-Yen Hsiung" className="object-cover" src="https://i.postimg.cc/pXfq8p2z/RA646773-DUMH-3.jpg" />
                     <AvatarFallback className="text-6xl">CH</AvatarFallback>
                   </Avatar>
                 </div>
