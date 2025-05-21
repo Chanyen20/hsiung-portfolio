@@ -34,7 +34,7 @@ export function About() {
                 </div>
                 <div className="ml-4">
                   <h4 className="font-medium text-portfolio-primary dark:text-white">B.Sc. in Communication Engineering</h4>
-                  <p className="text-portfolio-secondary dark:text-gray-300">National Central University (2016–2019)</p>
+                  <p className="text-portfolio-secondary dark:text-gray-300">National Central University (Sep 2016– Jun 2019)</p>
                 </div>
               </div>
             </div>
