@@ -18,7 +18,7 @@ export function Hero() {
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className={`w-full md:w-1/2 mb-12 md:mb-0 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <div className="max-w-lg mx-auto md:mx-0">
-              <h1 className="text-4xl md:text-6xl font-bold text-portfolio-primary dark:text-white mb-4 leading-tight">
+              <h1 className="text-4xl mb-4 leading-tight font-bold text-gray-950 md:text-5xl">
                 Hello, I'm <br />
                 <span className="text-5xl bg-clip-text text-transparent bg-gradient-to-r from-portfolio-primary to-portfolio-primary/70 dark:from-white dark:to-white/70 md:text-5xl">Chan-Yen Hsiung</span>
               </h1>
