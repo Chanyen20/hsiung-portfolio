@@ -33,20 +33,8 @@ export function Navbar() {
           <a href="#about" className="text-portfolio-primary hover:text-portfolio-secondary dark:text-white dark:hover:text-gray-300 transition-colors">
             About
           </a>
-          <a href="#experience" className="text-portfolio-primary hover:text-portfolio-secondary dark:text-white dark:hover:text-gray-300 transition-colors">
-            Experience
-          </a>
-          <a href="#skills" className="text-portfolio-primary hover:text-portfolio-secondary dark:text-white dark:hover:text-gray-300 transition-colors">
-            Skills
-          </a>
-          <a href="#services" className="text-portfolio-primary hover:text-portfolio-secondary dark:text-white dark:hover:text-gray-300 transition-colors">
-            Services
-          </a>
           <a href="#projects" className="text-portfolio-primary hover:text-portfolio-secondary dark:text-white dark:hover:text-gray-300 transition-colors">
             Projects
-          </a>
-          <a href="#contact" className="text-portfolio-primary hover:text-portfolio-secondary dark:text-white dark:hover:text-gray-300 transition-colors">
-            Contact
           </a>
           <ThemeToggle />
         </nav>
@@ -98,39 +86,11 @@ export function Navbar() {
               About
             </a>
             <a
-              href="#experience"
-              onClick={() => setIsMenuOpen(false)}
-              className="text-portfolio-primary dark:text-white py-2"
-            >
-              Experience
-            </a>
-            <a
-              href="#skills"
-              onClick={() => setIsMenuOpen(false)}
-              className="text-portfolio-primary dark:text-white py-2"
-            >
-              Skills
-            </a>
-            <a
-              href="#services"
-              onClick={() => setIsMenuOpen(false)}
-              className="text-portfolio-primary dark:text-white py-2"
-            >
-              Services
-            </a>
-            <a
               href="#projects"
               onClick={() => setIsMenuOpen(false)}
               className="text-portfolio-primary dark:text-white py-2"
             >
               Projects
-            </a>
-            <a
-              href="#contact"
-              onClick={() => setIsMenuOpen(false)}
-              className="text-portfolio-primary dark:text-white py-2"
-            >
-              Contact
             </a>
           </div>
         </div>
