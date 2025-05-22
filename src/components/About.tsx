@@ -6,10 +6,10 @@ export function About() {
         
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="reveal">
-            <p className="text-lg text-portfolio-primary dark:text-gray-200 mb-6 leading-relaxed">
+            <p className="text-lg text-portfolio-primary dark:text-gray-200 mb-6 leading-relaxed text-justify">
               With four years of professional experience, I specialize in front-end UI development and back-end microservices design. I've architected scalable systems and performed rigorous stress testing to ensure performance under load.
             </p>
-            <p className="text-lg text-portfolio-primary dark:text-gray-200 leading-relaxed">
+            <p className="text-lg text-portfolio-primary dark:text-gray-200 leading-relaxed text-justify">
               My passion lies in creating efficient, scalable software solutions that deliver exceptional user experiences while maintaining robust backend performance.
             </p>
           </div>
