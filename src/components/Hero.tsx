@@ -22,9 +22,7 @@ export function Hero() {
                 Hello, I'm <br />
                 <span className="text-5xl bg-clip-text text-transparent bg-gradient-to-r from-portfolio-primary to-portfolio-primary/70 dark:from-white dark:to-white/70 md:text-5xl">Chan-Yen Hsiung</span>
               </h1>
-              <p className="text-portfolio-secondary dark:text-gray-300 text-xl mb-8">Full-Stack Software Developer | 
-
-Microservices &amp; Performance Testing</p>
+              <p className="text-portfolio-secondary dark:text-gray-300 text-xl mb-8">Software Engineer</p>
               <div className="flex flex-wrap gap-4">
                 <Button asChild className="bg-portfolio-primary hover:bg-portfolio-primary/90 text-white px-8 py-6 h-auto text-lg transition-all duration-300 hover:translate-y-[-2px] hover:shadow-lg group">
                   <a href="#projects">
@@ -33,9 +31,7 @@ Microservices &amp; Performance Testing</p>
                   </a>
                 </Button>
                 <Button asChild variant="outline" className="border-portfolio-primary text-portfolio-primary hover:bg-portfolio-primary hover:text-white dark:border-white dark:text-white dark:hover:bg-white dark:hover:text-portfolio-primary px-8 py-6 h-auto text-lg transition-all duration-300 hover:translate-y-[-2px] hover:shadow-md">
-                  <a href="#contact">
-                    Contact Me
-                  </a>
+                  <a href="#contact">Contact Me</a>
                 </Button>
               </div>
             </div>
