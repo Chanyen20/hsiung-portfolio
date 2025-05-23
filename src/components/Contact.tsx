@@ -1,5 +1,5 @@
 
-import { useState, useRef } from "react";
+import { useState } from "react";
 import { toast } from "@/hooks/use-toast";
 import emailjs from '@emailjs/browser';
 import { 
@@ -26,7 +26,6 @@ const formSchema = z.object({
 
 export function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const formRef = useRef();
 
   // Setup react-hook-form with zod validation
   const form = useForm<z.infer<typeof formSchema>>({
