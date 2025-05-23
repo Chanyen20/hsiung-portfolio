@@ -1,8 +1,7 @@
-
 import { School } from "lucide-react";
 export function About() {
   return <section id="about" className="section bg-white dark:bg-portfolio-primary">
-      <div className="container mx-auto px-4">
+      <div className="container px-4 mx-[20px]">
         <h2 className="section-title text-center dark:text-white reveal">About Me</h2>
         
         <div className="grid md:grid-cols-2 gap-12 items-center">
