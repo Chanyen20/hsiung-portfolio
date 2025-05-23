@@ -1,3 +1,4 @@
+
 import { School } from "lucide-react";
 export function About() {
   return <section id="about" className="section bg-white dark:bg-portfolio-primary">
@@ -6,10 +7,10 @@ export function About() {
         
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="reveal">
-            <p className="text-lg mb-6 leading-relaxed text-justify text-slate-950">
+            <p className="text-lg mb-6 leading-relaxed text-justify text-slate-950 dark:text-gray-300">
               With four years of professional experience, I specialize in front-end UI development and back-end microservices design. I've architected scalable systems and performed rigorous stress testing to ensure performance under load.
             </p>
-            <p className="text-lg leading-relaxed text-justify text-gray-950">
+            <p className="text-lg leading-relaxed text-justify text-gray-950 dark:text-gray-300">
               My passion lies in creating efficient, scalable software solutions that deliver exceptional user experiences while maintaining robust backend performance.
             </p>
           </div>

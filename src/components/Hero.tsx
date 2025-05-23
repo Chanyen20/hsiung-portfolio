@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Linkedin, Github, Mail, Facebook, Instagram } from "lucide-react";
+import { ArrowRight, Linkedin, Github, Mail } from "lucide-react";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 export function Hero() {
@@ -37,10 +37,6 @@ export function Hero() {
                 </Button>
                 
                 <Button asChild variant="outline" className="border-portfolio-primary text-portfolio-primary hover:bg-portfolio-primary hover:text-white dark:border-white dark:text-white dark:hover:bg-white dark:hover:text-portfolio-primary px-8 py-6 h-auto text-lg transition-all duration-300 hover:translate-y-[-2px] hover:shadow-md">
-                  <a href="#about">About Me</a>
-                </Button>
-                
-                <Button asChild variant="outline" className="border-portfolio-primary text-portfolio-primary hover:bg-portfolio-primary hover:text-white dark:border-white dark:text-white dark:hover:bg-white dark:hover:text-portfolio-primary px-8 py-6 h-auto text-lg transition-all duration-300 hover:translate-y-[-2px] hover:shadow-md">
                   <a href="/assets/ChanYenHsiung.pdf" target="_blank" rel="noopener noreferrer">
                     Up to date Resume
                   </a>
@@ -49,20 +45,14 @@ export function Hero() {
               
               {/* Social Media Icons */}
               <div className="flex space-x-4 mt-6">
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-portfolio-primary hover:text-portfolio-primary/80 dark:text-white dark:hover:text-white/80 transition-colors">
+                <a href="https://www.linkedin.com/in/chan-yen-hsiung-b4117221a/" target="_blank" rel="noopener noreferrer" className="text-portfolio-primary hover:text-portfolio-primary/80 dark:text-white dark:hover:text-white/80 transition-colors">
                   <Linkedin strokeWidth={1.5} size={28} />
                 </a>
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-portfolio-primary hover:text-portfolio-primary/80 dark:text-white dark:hover:text-white/80 transition-colors">
+                <a href="https://github.com/Chanyen20" target="_blank" rel="noopener noreferrer" className="text-portfolio-primary hover:text-portfolio-primary/80 dark:text-white dark:hover:text-white/80 transition-colors">
                   <Github strokeWidth={1.5} size={28} />
                 </a>
-                <a href="mailto:contact@example.com" className="text-portfolio-primary hover:text-portfolio-primary/80 dark:text-white dark:hover:text-white/80 transition-colors">
+                <a href="mailto:chanyenhsiung@gmail.com" className="text-portfolio-primary hover:text-portfolio-primary/80 dark:text-white dark:hover:text-white/80 transition-colors">
                   <Mail strokeWidth={1.5} size={28} />
-                </a>
-                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-portfolio-primary hover:text-portfolio-primary/80 dark:text-white dark:hover:text-white/80 transition-colors">
-                  <Facebook strokeWidth={1.5} size={28} />
-                </a>
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-portfolio-primary hover:text-portfolio-primary/80 dark:text-white dark:hover:text-white/80 transition-colors">
-                  <Instagram strokeWidth={1.5} size={28} />
                 </a>
               </div>
             </div>

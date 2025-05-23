@@ -25,7 +25,7 @@ export function Navbar() {
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
         <a href="#" className="text-xl font-bold text-portfolio-primary dark:text-white">
-          Chan-Yen Hsiung
+          <img src="/lovable-uploads/757d354a-98db-434f-8d03-3b6e8df3af05.png" alt="Chan-Yen Hsiung Logo" className="h-10" />
         </a>
 
         {/* Desktop Menu */}
@@ -35,6 +35,9 @@ export function Navbar() {
           </a>
           <a href="#projects" className="text-portfolio-primary hover:text-portfolio-secondary dark:text-white dark:hover:text-gray-300 transition-colors">
             Projects
+          </a>
+          <a href="#contact" className="text-portfolio-primary hover:text-portfolio-secondary dark:text-white dark:hover:text-gray-300 transition-colors">
+            Contact
           </a>
           <ThemeToggle />
         </nav>
@@ -91,6 +94,13 @@ export function Navbar() {
               className="text-portfolio-primary dark:text-white py-2"
             >
               Projects
+            </a>
+            <a
+              href="#contact"
+              onClick={() => setIsMenuOpen(false)}
+              className="text-portfolio-primary dark:text-white py-2"
+            >
+              Contact
             </a>
           </div>
         </div>
