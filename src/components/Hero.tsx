@@ -1,16 +1,12 @@
-
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Linkedin, Github, Mail } from "lucide-react";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
-
 export function Hero() {
   const [isVisible, setIsVisible] = useState(false);
-  
   useEffect(() => {
     setIsVisible(true);
   }, []);
-  
   return <section className="relative min-h-screen flex items-center bg-portfolio-accent dark:bg-portfolio-primary/95 pt-16 overflow-hidden" id="home">
       {/* Modern background elements */}
       <div className="absolute inset-0 z-0 px-0 mx-0">
@@ -44,7 +40,7 @@ export function Hero() {
               </div>
               
               {/* Social Media Icons */}
-              <div className="flex space-x-4 mt-6">
+              <div className="flex space-x-4 mt-6 mx-[10px]">
                 <a href="https://www.linkedin.com/in/chan-yen-hsiung-b4117221a/" target="_blank" rel="noopener noreferrer" className="text-portfolio-primary hover:text-portfolio-primary/80 dark:text-white dark:hover:text-white/80 transition-colors">
                   <Linkedin strokeWidth={1.5} size={28} />
                 </a>
