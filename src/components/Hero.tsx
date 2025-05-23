@@ -1,13 +1,16 @@
 
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Linkedin, Github, Mail, Facebook, Instagram } from "lucide-react";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+
 export function Hero() {
   const [isVisible, setIsVisible] = useState(false);
+  
   useEffect(() => {
     setIsVisible(true);
   }, []);
+  
   return <section className="relative min-h-screen flex items-center bg-portfolio-accent dark:bg-portfolio-primary/95 pt-16 overflow-hidden" id="home">
       {/* Modern background elements */}
       <div className="absolute inset-0 z-0 px-0 mx-0">
@@ -24,19 +27,47 @@ export function Hero() {
                 <span className="text-5xl bg-clip-text text-transparent bg-gradient-to-r from-portfolio-primary to-portfolio-primary/70 dark:from-white dark:to-white/70 md:text-5xl">Chan-Yen Hsiung</span>
               </h1>
               <p className="text-portfolio-secondary dark:text-gray-300 text-xl mb-8">Software Engineer</p>
-              <div className="flex flex-wrap gap-4">
+              
+              <div className="flex flex-wrap gap-4 mb-8">
                 <Button asChild className="bg-portfolio-primary hover:bg-portfolio-primary/90 text-white px-8 py-6 h-auto text-lg transition-all duration-300 hover:translate-y-[-2px] hover:shadow-lg group">
                   <a href="#projects">
                     View Portfolio
                     <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
                   </a>
                 </Button>
+                
                 <Button asChild variant="outline" className="border-portfolio-primary text-portfolio-primary hover:bg-portfolio-primary hover:text-white dark:border-white dark:text-white dark:hover:bg-white dark:hover:text-portfolio-primary px-8 py-6 h-auto text-lg transition-all duration-300 hover:translate-y-[-2px] hover:shadow-md">
                   <a href="#about">About Me</a>
                 </Button>
+                
+                <Button asChild variant="outline" className="border-portfolio-primary text-portfolio-primary hover:bg-portfolio-primary hover:text-white dark:border-white dark:text-white dark:hover:bg-white dark:hover:text-portfolio-primary px-8 py-6 h-auto text-lg transition-all duration-300 hover:translate-y-[-2px] hover:shadow-md">
+                  <a href="/assets/ChanYenHsiung.pdf" target="_blank" rel="noopener noreferrer">
+                    Up to date Resume
+                  </a>
+                </Button>
+              </div>
+              
+              {/* Social Media Icons */}
+              <div className="flex space-x-4 mt-6">
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-portfolio-primary hover:text-portfolio-primary/80 dark:text-white dark:hover:text-white/80 transition-colors">
+                  <Linkedin strokeWidth={1.5} size={28} />
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-portfolio-primary hover:text-portfolio-primary/80 dark:text-white dark:hover:text-white/80 transition-colors">
+                  <Github strokeWidth={1.5} size={28} />
+                </a>
+                <a href="mailto:contact@example.com" className="text-portfolio-primary hover:text-portfolio-primary/80 dark:text-white dark:hover:text-white/80 transition-colors">
+                  <Mail strokeWidth={1.5} size={28} />
+                </a>
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-portfolio-primary hover:text-portfolio-primary/80 dark:text-white dark:hover:text-white/80 transition-colors">
+                  <Facebook strokeWidth={1.5} size={28} />
+                </a>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-portfolio-primary hover:text-portfolio-primary/80 dark:text-white dark:hover:text-white/80 transition-colors">
+                  <Instagram strokeWidth={1.5} size={28} />
+                </a>
               </div>
             </div>
           </div>
+          
           <div className={`w-full md:w-1/2 transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <div className="relative max-w-md mx-auto">
               <div className="relative mx-0">
