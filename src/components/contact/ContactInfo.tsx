@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 export function ContactInfo() {
@@ -63,12 +62,12 @@ export function ContactInfo() {
             <div className="ml-4">
               <h4 className="font-medium text-portfolio-primary dark:text-white">GitHub</h4>
               <a 
-                href="https://github.com/terrychendev" 
+                href="https://github.com/Chanyen20" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-portfolio-secondary dark:text-gray-300 hover:underline"
               >
-                github.com/terrychendev
+                github.com/Chanyen20
               </a>
             </div>
           </div>
