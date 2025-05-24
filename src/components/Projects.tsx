@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 
 export function Projects() {
@@ -46,9 +45,20 @@ export function Projects() {
               >
                 <h3 className="text-xl font-bold text-white mb-2">{project.title}</h3>
                 <p className="text-gray-200 mb-4">{project.description}</p>
-                <button className="bg-white text-portfolio-primary px-4 py-2 rounded-md hover:bg-gray-100 transition-colors self-start">
-                  Learn More
-                </button>
+                {project.title === "Quantum-Encrypted Desktop Messenger" ? (
+                  <a
+                    href="https://www.e2eelab.org/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-white text-portfolio-primary px-4 py-2 rounded-md hover:bg-gray-100 transition-colors self-start"
+                  >
+                    Learn More
+                  </a>
+                ) : (
+                  <button className="bg-white text-portfolio-primary px-4 py-2 rounded-md hover:bg-gray-100 transition-colors self-start">
+                    Learn More
+                  </button>
+                )}
               </div>
             </div>
           ))}

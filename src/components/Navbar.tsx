@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { ThemeToggle } from "./ThemeToggle";
 
@@ -25,7 +24,7 @@ export function Navbar() {
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
         <a href="#" className="text-xl font-bold text-portfolio-primary dark:text-white">
-          <img src="/lovable-uploads/757d354a-98db-434f-8d03-3b6e8df3af05.png" alt="Chan-Yen Hsiung Logo" className="h-10" />
+          <img src="/hsiung-portfolio/logo-chan-yen-hsiung.png" alt="Chan-Yen Hsiung Logo" className="h-12 w-auto" />
         </a>
 
         {/* Desktop Menu */}
@@ -38,6 +37,9 @@ export function Navbar() {
           </a>
           <a href="#contact" className="text-portfolio-primary hover:text-portfolio-secondary dark:text-white dark:hover:text-gray-300 transition-colors">
             Contact
+          </a>
+          <a href="/hsiung-portfolio/ChanYenHsiung.pdf" className="text-portfolio-primary hover:text-portfolio-secondary dark:text-white dark:hover:text-gray-300 transition-colors">
+            Up to date Resume
           </a>
           <ThemeToggle />
         </nav>
@@ -101,6 +103,13 @@ export function Navbar() {
               className="text-portfolio-primary dark:text-white py-2"
             >
               Contact
+            </a>
+            <a
+              href="/hsiung-portfolio/ChanYenHsiung.pdf"
+              onClick={() => setIsMenuOpen(false)}
+              className="text-portfolio-primary dark:text-white py-2"
+            >
+              Up to date Resume
             </a>
           </div>
         </div>

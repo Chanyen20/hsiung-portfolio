@@ -26,14 +26,14 @@ export function Hero() {
               
               <div className="flex flex-wrap gap-4 mb-8">
                 <Button asChild className="bg-portfolio-primary hover:bg-portfolio-primary/90 text-white px-8 py-6 h-auto text-lg transition-all duration-300 hover:translate-y-[-2px] hover:shadow-lg group">
-                  <a href="#projects">
+                  <a href="#projects" onClick={(e) => { e.preventDefault(); document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' }); }}>
                     View Portfolio
                     <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
                   </a>
                 </Button>
                 
                 <Button asChild variant="outline" className="border-portfolio-primary text-portfolio-primary hover:bg-portfolio-primary hover:text-white dark:border-white dark:text-white dark:hover:bg-white dark:hover:text-portfolio-primary px-8 py-6 h-auto text-lg transition-all duration-300 hover:translate-y-[-2px] hover:shadow-md">
-                  <a href="/assets/ChanYenHsiung.pdf" target="_blank" rel="noopener noreferrer">
+                  <a href="/hsiung-portfolio/assets/ChanYenHsiung.pdf" target="_blank" rel="noopener noreferrer">
                     Up to date Resume
                   </a>
                 </Button>
